@@ -30,7 +30,7 @@ body {
 .sidebar img {
     display: block;
     border-radius: 50%;
-    width: 75%; /* Adjusted width */
+    width: 50%; /* Adjusted width */
     margin: 0 auto 20px;
 }
 
