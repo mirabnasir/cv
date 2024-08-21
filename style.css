@@ -31,6 +31,8 @@ body {
     display: block;
     border-radius: 50%;
     width: 50%; /* Adjusted width */
+    max-width: 120px; /* Maximum width */
+    height: auto;
     margin: 0 auto 20px;
 }
 
