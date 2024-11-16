@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    background-color: #f8f9fa; 
+    font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.cv-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden;
+    background-color: #fff; 
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #333; 
+    color: #f0f0f0; 
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar img {
+    display: block;
+    border-radius: 50%;
+    width: 50%; /* Adjusted width */
+    max-width: 120px; /* Maximum width */
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.sidebar h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+.sidebar a {
+    color: #f0f0f0; /* White color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.sidebar a:hover {
+    color: #fff; /* Ensure the link stays white when hovered */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+/* Main Content Styling */
+.main {
+    background-color: white;
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main h1 {
+    color: #222; /* Darker color for main heading */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main h2 {
+    color: #333; /* Dark grey headings */
+    position: relative;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.main h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333; /* Dark grey underline */
+}
+
+.main p {
+    margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+.main ul, .main ol {
+    padding-left: 20px;
+}
+
+.main ul li, .main ol li {
+    margin-bottom: 10px;
+}
+.education-item h4, .education-item p{
+    margin-bottom: 0;
+}
+.education-item p{
+    margin-top: 0;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column; /* Stack sidebar and main vertically */
+        width: 90%; /* Reduce width */
+        padding: 10px; /* Add padding for smaller screens */
+    }
+
+    .sidebar, .main {
+        width: 100%; /* Full width for smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .sidebar img {
+        max-width: 120px; /* Reduce image size for smaller screens */
+    }
+}
+@media (min-width: 820px){
+  .sidebar {
+    padding: 25px;
+    width: 37%;
+  }
+}
